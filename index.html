@@ -4,117 +4,400 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> -->
   </head>
   <body>
-    <header>
-      <nav>
-         <a href="#">
-          <img src="./images/logo.svg" alt="Your Bakery Logo" />
-        </a>
-        <ul>
-          <li><a class="link" href="#">Our traditions</a></li>
-          <li><a class="link" href="#">Chefs</a></li>
-          <li><a class="link" href="#">Formats</a></li>
-          <li><a class="link" href="#">Contacts</a></li>
-        </ul>
-      </nav>
-      <button class="button" type="submit">Request a call</button>
+    <header class="header">
+      <div class="container">
+        <div class="header__container">
+          <nav class="header__nav">
+            <a href="/">
+              <img src="./images/logo.svg" alt="Your Bakery Logo" />
+            </a>
+            <ul class="header__menu">
+              <li>
+                <a class="link" href="#">Our traditions</a>
+              </li>
+              <li><a class="link" href="#">Chefs</a></li>
+              <li><a class="link" href="#">Formats</a></li>
+              <li><a class="link" href="#">Contacts</a></li>
+            </ul>
+          </nav>
+          <button class="button modal-btn-open" type="submit">
+            Request a call
+          </button>
+        </div>
+      </div>
     </header>
-      <main>
-        <section>
-          <h1 class="hero-title"><span class="accent">Your</span> bakery</h1>
-        </section>
-        <section id="traditional-section">
-          <ul class="advantages-list">
-            <li>Great demand on the market</li>
-            <li>Affordable formats</li>
-            <li>Experienced management team</li>
+    <main>
+      <section class="hero-section">
+        <div class="container">
+          <h1 class="hero-section__title">
+            <span class="text-brand">Your</span> bakery
+          </h1>
+        </div>
+      </section>
+      <section class="advantages-section">
+        <div class="container">
+          <h2 class="visually-hidden">Our advantages</h2>
+          <ul class="advantages-section__list">
+            <li class="advantages-section__item">Great demand on the market</li>
+            <li class="advantages-section__item">Affordable formats</li>
+            <li class="advantages-section__item">
+              Experienced management team
+            </li>
           </ul>
-          <h2 class="">New format of traditions</h2>
-          <p><span>Your bakery</span> is a bakery that has taken all the best 
-              and preserved the taste of traditional pastries and the naturalness of the ingredients.</p>
-          </p>
-          <p>
-            We work like the most famous chains — <span>>5 minutes and the order is ready.</span> And our bakeries have stylish design and high quality service!
-          </p>
-          <img src="./images/baker-man.jpg" alt="Baker man" />
-        </section>
-        <section id="chefs-section">
-          <h2 class="section-title">Best chefs</h2>
-          <ul>
-            <li> 
-              <article>
-                <h3>Mary</h3>
-                <p>Hello, I'm Mary!</p>
-                <p>For 10 years, I've been bringing 
-                  interesting and delicious ideas to life.</p>
-                  <p>I'll bake the most delicious products for you!</p>
+        </div>
+      </section>
+      <section class="traditions-section section" id="traditions-section">
+        <div class="container">
+          <div class="traditions-section__container">
+            <div class="traditions-section__content">
+              <h2 class="traditions-section__title section-title">
+                New format of traditions
+              </h2>
+              <p>
+                <span class="text-brand text-bold text-uppercase"
+                  >Your bakery</span
+                >
+                is a bakery that has taken all the best and preserved the taste
+                of traditional pastries and the naturalness of the ingredients.
+              </p>
+              <p
+                class="traditions-section__text traditions-section__text--limited"
+              >
+                We work like the most famous chains —
+                <span class="text-brand text-bold"
+                  >5 minutes and the order is ready</span
+                >. And our bakeries have stylish design and high quality
+                service!
+              </p>
+            </div>
+            <img src="./images/baker-man.jpg" alt="Baker man" />
+          </div>
+        </div>
+      </section>
+      <section class="chefs-section" id="chefs-section">
+        <div class="container">
+          <h2
+            class="chefs-section__title section__title section__title--centred"
+          >
+            Best <span class="text-brand-dark">chefs</span>
+          </h2>
+          <ul class="chefs-section__list">
+            <li class="chefs-section__item">
+              <article class="chef-card">
+                <img
+                  class="chef-card__photo"
+                  src="./images/mary-chef.jpg"
+                  alt="Chef Mary"
+                />
+                <div>
+                  <h3 class="chef-card__title">Mary</h3>
+                  <p class="chef-card__text">Hello, I'm Mary!</p>
+                  <p class="chef-card__text">
+                    For 10 years, I've been bringing interesting and delicious
+                    ideas to life.
+                  </p>
+                  <p class="chef-card__text">
+                    I'll bake the most delicious products for you!
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="chefs-section__item">
+              <article class="chef-section__card">
+                <img
+                  class="chef-section__photo"
+                  src="./images/max-chef.jpg"
+                  alt="Chef Max"
+                />
+                <div>
+                  <h3 class="chef-section__title">Max</h3>
+                  <p class="chef-section__text">Hello, I'm Max!</p>
+                  <p class="chef-section__text">
+                    My experience as a pastry chef is 18 years. SHOP BEKERY is
+                    our love, which we share with you every time through our
+                    pastries!
+                  </p>
+                  <p class="chef-section__text">
+                    I will make a unique filling for you for any taste!
+                  </p>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="formats-section section" id="formats-section">
+        <div class="container">
+          <h2
+            class="formats-section__title section__title section__title--centred"
+          >
+            Formats
+          </h2>
+          <div class="formats-section__container">
+            <button class="carousel-button" type="button">
+              <svg width="16" height="16">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+            </button>
+            <ul class="formats-section__list">
+              <li class="formats-setion__item">
+                <article class="format-card">
+                  <img
+                    class="format-card__image"
+                    src="./images/walrus-format.jpg"
+                    alt="Walrus format"
+                  />
+                  <h3 class="format-card__title">Walrus</h3>
+                  <div class="format-card__text">
+                    <p>Area: up to 120 m2</p>
+                    <p>Menu: extended menu</p>
+                    <p>Staff: 2 cashiers, 2 bakers, 2 baker's assistants,</p>
+                    <p>Seats: available</p>
+                  </div>
                 </article>
               </li>
-            <li>   
-              <article>
-                <h3>Max</h3>
-                <p>Hello, I'm Max!</p>
-                <p>My experience as a pastry chef is 18 years.
-                  SHOP BEKERY is our love, which we share with
-                  you every time through our pastries!</p>
-                <p>I will make a unique filling for you for any taste!</p>
-              </article>
-            </li>
-          </ul>      
-        </section>
-        <section>
-          <h2 class="section-title">Formats</h2>
-          <ul>
-            <li>
-              <article>
-                <h3>Walrus</h3>
-                <p>Brief description of Format 1.</p>
-              </article>
-            </li>
-            <li>
-              <article>
-                <h3>Horseshoe</h3>
-                <p>Brief description of Format 2.</p>
-              </article>
-            </li>
-            <li>
-              <article>
-                <h3>Handlebar</h3>
-                <p>Brief description of Format 3.</p>
-              </article>
-            </li>
-          </ul>         
-        </section>
-        <section>
-          <h2 class="section-title">Join the bakery network</h2>
-        </section>
-      </main>
-    
-    <footer>
+              <li class="formats-section__item">
+                <article class="format-card">
+                  <img
+                    class="format-card__image"
+                    src="./images/horseshoe-format.jpg"
+                    alt="Horseshoe format"
+                  />
+                  <h3 class="format-card__title">Horseshoe</h3>
+                  <div class="format-card__text">
+                    <p>Area: up to 25 m2</p>
+                    <p>Menu: the most popular menu items</p>
+                    <p>Staff: 2 cashiers, 2 bakers, 1 baker's assistant</p>
+                    <p>Seats: none</p>
+                  </div>
+                </article>
+              </li>
+              <li class="formats-section__item">
+                <article class="format-card">
+                  <img
+                    class="format-card__image"
+                    src="./images/handlebar-format.jpg"
+                    alt="Handlebar format"
+                  />
+                  <h3 class="format-card__title">Handlebar</h3>
+                  <div class="format-card__text">
+                    <p>Area: up to 15 m2</p>
+                    <p>Menu: the most popular menu items</p>
+                    <p>Staff: 1 seller, 1 baker, 1 baker's assistant</p>
+                    <p>Seats: none</p>
+                  </div>
+                </article>
+              </li>
+            </ul>
+            <button class="carousel-button next" type="button">
+              <svg width="16" height="16">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="contact-section section" id="contact-section">
+        <div class="container">
+          <div class="contact-section__conrainer">
+            <div class="contact-section__form">
+              <h2 class="contact-section__title section__title">
+                Join the bakery network
+              </h2>
+              <p>Fill out the form so we can contact you!</p>
+              <form
+                class="contact-section__form"
+                name="contact-form"
+                autocomplete="off"
+              >
+                <div class="contact-section__form-field input">
+                  <label class="input__label visually-hidden" for="user-name"
+                    >Name</label
+                  >
+                  <input
+                    class="input__control"
+                    type="text"
+                    name="user-name"
+                    id="user-name"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="contact-section__form-field input">
+                  <label class="input__label visually-hidden" for="user-tel"
+                    >Phone</label
+                  >
+                  <input
+                    class="input__control"
+                    type="tel"
+                    name="user-tel"
+                    id="user-tel"
+                    placeholder="Phone"
+                  />
+                </div>
 
-      <nav>
-        <a href="#"></a>
+                <div class="contact-section__form-field input">
+                  <label class="input__label visually-hidden" for="user-email"
+                    >Email</label
+                  >
+                  <input
+                    class="input__control"
+                    type="email"
+                    name="user-email"
+                    id="user-email"
+                    placeholder="Email"
+                  />
+                </div>
 
-        <ul>
-          <li><a href="#">Our traditions</a></li>
-          <li><a href="#">Chefs</a></li>
-          <li><a href="#">Formats</a></li>
-          <li><a href="#">Contacts</a></li>
-        </ul>
-      </nav>
-      <address>
-        <ul>
-          <li><a href="tel:+1234567890">+1 (234) 567-890</a></li>
-          <li><a href="mailto:info@yourbakery.com">info@yourbakery.com</a></li>
-          <li><a href="https://www.google.com/maps/place/123+Bakery+St.,+Sweet+City,+Country">123 Bakery St., Sweet City, Country</a></li>
-          <li><a href="#">fb</a></li>
-          <li><a href="#">snst</a></li>
-          <li><a href="#" target="_blank">Privacy Policy</a></li>
-          <p>&copy; 2022 Your Bakery. All rights reserved.</p>
-        </ul>
-      </address>
+                <button class="form-button button" type="submit">
+                  Request Callback
+                </button>
+                <p class="form-terms">
+                  I agree to
+                  <a class="form-terms-link" href="#">terms and conditions</a>
+                </p>
+              </form>
+            </div>
+
+            <iframe
+              class="contact-section__map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2311.9541619056895!2d-1.3129641233007379!3d54.58718177267502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487e929173f52b23%3A0x3a4b1bee4fcedaeb!2sBluecorn%20Bakery!5e0!3m2!1sru!2sua!4v1764698692146!5m2!1sru!2sua"
+              width="603"
+              height="595"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-container">
+          <nav class="footer-nav">
+            <div class="footer-logo">
+              <a href="#">
+                <img src="./images/logo.svg" alt="logo" />
+              </a>
+            </div>
+
+            <ul class="footer-menu">
+              <li><a class="link" href="#">Our traditions</a></li>
+              <li><a class="link" href="#">Chefs</a></li>
+              <li><a class="link" href="#">Formats</a></li>
+              <li><a class="link" href="#">Contacts</a></li>
+            </ul>
+          </nav>
+          <address class="footer-address">
+            <ul class="address-list">
+              <li>
+                <a class="address-link" href="tel:+1234567890"
+                  >+1 (234) 567-890</a
+                >
+              </li>
+              <li>
+                <a class="address-link" href="mailto:info@yourbakery.com"
+                  >info@yourbakery.com</a
+                >
+              </li>
+              <li>
+                <a
+                  class="address-link"
+                  href="https://www.google.com/maps/place/123+Bakery+St.,+Sweet+City,+Country"
+                  >123 Bakery St., Sweet City, Country</a
+                >
+              </li>
+              <li>
+                <a class="address-link" href="#">
+                  <svg class="address-icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-facebook-logo"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="address-link" href="#">
+                  <svg class="address-icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-instagram-logo"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <div class="address-info">
+              <a class="address-link" href="#" target="_blank"
+                >Privacy Policy</a
+              >
+              <p class="address-copyright">
+                &copy; 2022 Your Bakery. All rights reserved.
+              </p>
+            </div>
+          </address>
+        </div>
+      </div>
     </footer>
+    <div class="backdrop is-hidden">
+      <div class="modal">
+        <button class="modal-btn-close" type="button">Close</button>
+        <h2>Request a Callback</h2>
+        <p>Leave a request and our specialist will contact you!</p>
+        <form name="modal-form" autocomplete="off">
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="user-name"
+              >Name</label
+            >
+            <input
+              class="form-input"
+              type="text"
+              name="user-name"
+              id="user-name"
+              placeholder="Name"
+              required
+            />
+          </div>
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="user-tel"
+              >Phone</label
+            >
+            <input
+              class="form-input"
+              type="tel"
+              name="user-tel"
+              id="user-tel"
+              placeholder="Phone"
+              required
+            />
+          </div>
+
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="user-email"
+              >Email</label
+            >
+            <input
+              class="form-input"
+              type="email"
+              name="user-email"
+              id="user-email"
+              placeholder="Email"
+              required
+            />
+          </div>
+
+          <button class="form-button button" type="submit">
+            Request Callback
+          </button>
+          <p class="form-terms">
+            I agree to
+            <a class="form-terms-link" href="#">terms and conditions</a>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
